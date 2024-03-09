@@ -26,7 +26,6 @@ namespace WpfApp1
 
         private void textBox1_Копировать_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
     }
 }

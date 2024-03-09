@@ -26,9 +26,6 @@ namespace WpfApp1
             Application.Current.MainWindow = new Window2();
             Application.Current.MainWindow.Show();
             InitializeComponent();
-
         }
-
     }
-
 }
