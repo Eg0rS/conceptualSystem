@@ -18,6 +18,9 @@ public partial class MainWindow : Window
 {
     public MainWindow()
     {
+        Application.Current.MainWindow = new Window1();
+        Application.Current.MainWindow = new Window2();
+        Application.Current.MainWindow.Show();
         InitializeComponent();
     }
 }
