@@ -1,14 +1,14 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace ConceptualSystem
+namespace ConceptualSystem.NewConcept
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для ConceptWindow.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class ConceptWindow : Window
     {
-        public Window1()
+        public ConceptWindow()
         {
             InitializeComponent();
         }
