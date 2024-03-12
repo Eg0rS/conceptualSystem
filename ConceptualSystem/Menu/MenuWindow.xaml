@@ -6,7 +6,7 @@
         mc:Ignorable="d"
         Background="FloralWhite"
         Title="MenuWindow" Height="800" Width="450">
-    <Grid x:Name="grid1">
+    <Grid x:Name="Grid1">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"></RowDefinition>
             <RowDefinition Height="85"></RowDefinition>
@@ -18,18 +18,21 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="TIdPers" Width="175" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="11,20,0,0" />
-        <TextBox x:Name="textBox2" Width="175" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="11,50,0,0" />
-        <TextBlock FontSize="16" Margin="10,22,10,58">Понятие</TextBlock>
-        <ComboBox Margin="10,50,10,24"></ComboBox>
-        <TextBlock FontSize="16" Margin="10,10,10,46" Grid.Row="1">Поле</TextBlock>
-        <ComboBox Margin="10,38,10,20" Grid.Row="1"></ComboBox>
+        <TextBox Grid.Row="0"  x:Name="Tnotion1" Width="175" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="11,20,0,0" />
+        <TextBox x:Name="Tnotion2" Width="175" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="0"
+                 Grid.Column="1" Margin="11,50,0,0" />
+        <TextBlock Grid.Row="0" Grid.Column="0" FontSize="16" Margin="10,22,10,58">Понятие</TextBlock>
+        <ComboBox Grid.Row="0" Grid.Column="0" Margin="10,50,10,24"></ComboBox>
+        <TextBlock FontSize="16" Margin="10,10,10,46" Grid.Row="1" Grid.Column="0">Поле</TextBlock>
+        <ComboBox Margin="10,38,10,20" Grid.Row="1" Grid.Column="0"></ComboBox>
         <TextBlock FontSize="16" Margin="11,10,254,46" Grid.Row="1" Grid.Column="1">Значение</TextBlock>
         <ComboBox Margin="11,38,254,20" Grid.Row="1" Grid.Column="1"></ComboBox>
-        <Button FontSize="18" Grid.ColumnSpan="2" Margin="10,0,254,547" Grid.Row="2" Content=">>"></Button>
-        <TextBox x:Name="textBox3" Width="175" Height="460" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,57,0,0" Grid.Row="2" />
-        <TextBox x:Name="textBox4" Width="175" Height="460" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,57,0,0" Grid.Row="2" Grid.Column="1" />
-        <TextBox x:Name="textBox5" Width="25" Height="460" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,57,0,0" Grid.Row="2" />
-        <Button FontSize="18" Grid.ColumnSpan="2" Margin="10,522,254,10" Grid.Row="2" Content="Записать"></Button>
+        <Button FontSize="18" Grid.ColumnSpan="2" Grid.Column="0" Margin="10,0,254,547" Grid.Row="2" Content=">>"></Button>
+        <TextBox x:Name="TValueNotion" Width="175" Height="440" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,77,0,0" Grid.Row="2"
+                 Grid.Column="0" />
+        <TextBox x:Name="TNotionColName" Width="175" Height="440" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,77,0,0" Grid.Row="2" Grid.Column="1" />
+        <TextBox x:Name="TIdPerson" Width="25" Height="440" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,77,0,0" Grid.Row="2"
+                 Grid.Column="0" />
+        <Button FontSize="18" Grid.ColumnSpan="2" Grid.Column="0" Margin="10,522,254,10" Grid.Row="2" Content="Записать"></Button>
     </Grid>
 </Window>
