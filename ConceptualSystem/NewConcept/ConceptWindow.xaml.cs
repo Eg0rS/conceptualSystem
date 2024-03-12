@@ -12,9 +12,6 @@ namespace ConceptualSystem.NewConcept
         {
             InitializeComponent();
         }
-
-        private void textBox1_Копировать_TextChanged(object sender, TextChangedEventArgs e)
-        {
-        }
+        
     }
 }
