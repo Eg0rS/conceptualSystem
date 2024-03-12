@@ -26,6 +26,8 @@ public partial class App : Application
 
     protected override void OnStartup(StartupEventArgs e)
     {
+        
+        //тест пул реквеста
         host.Start();
         var s = host.Services.GetRequiredService<MenuWindow>();
         MainWindow = host.Services.GetRequiredService<MenuWindow>();
